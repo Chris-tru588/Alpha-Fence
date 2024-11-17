@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Fence</title>
+    <link rel="icon" type="image/x-icon" href="Images/fence.png" />
+  </head>
+  <body>
+    <header>
+      <img src="Images/logo.png" alt="Picket Fence logo" class="logo" />
+      <img
+        src="Images/alpha-fence-high-resolution-logo.png"
+        alt="Company Name"
+        class="desk-logo"
+      />
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="prices.html">Prices</a>
+        </li>
+        <li>
+          <a href="careers.html">Careers</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Careers / Employment</h1>
+
+      <h2>Now Hiring Fence Installers:</h2>
+
+      <p>
+        Earn over $45k in the first year... and you will have the opportunities
+        to advance to foreman, $55k-85k+ per year.
+      </p>
+
+      <div class="form">
+        <h3>Complete The Form To Get Started</h3>
+        <form class="form-grid">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" id="fName" required />
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName" required />
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required />
+            <label for="email">Email: (Optional)</label>
+            <input type="text" name="email" id="email" />
+            <label for="phone">Phone Number:</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              required
+              placeholder="(111) 222-3333"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+            <label for="pay">Desired Pay?</label>
+            <input type="text" name="pay" id="pay" placeholder="$" />
+            <label for="recommendation">How Did You Hear About Us?</label>
+            <select name="recommendation" id="recommendation">
+              <option value="ad">Advertisement</option>
+              <option value="friend">Friend</option>
+              <option value="google">Google</option>
+              <option value="social">Social Media</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="goal">What Are Your Long-Term Career Goals?</label>
+            <textarea id="goal" name="goal" rows="2" cols="35"></textarea>
+            <label for="questions">Questions</label>
+            <textarea
+              id="questions"
+              name="questions"
+              rows="3"
+              cols="35"
+            ></textarea>
+          </fieldset>
+          <div class="btnContainer">
+            <input type="submit" id="submit" value="Submit" class="btn" />
+            <input type="reset" id="reset" value="Reset" class="btn" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Alpha Fencing Co.</p>
+      <p>&copy; Copyright 2024. All Rights reserved</p>
+    </footer>
+  </body>
+</html>

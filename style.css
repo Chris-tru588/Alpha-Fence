@@ -1,0 +1,354 @@
+/* Chris Trujillo 
+   Alpha Fencing 
+   11/13/2024
+   */
+
+/* Coolers for website 
+    dim grey: #60656F
+    celestial blue: #279AF1
+    cadet grey: #8AA1B1
+   */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* mobile view styling */
+
+/* header area */
+
+body {
+  background-color: #60656f;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.desk-logo {
+  display: none;
+}
+
+.desk {
+  display: none;
+}
+
+header {
+  background-color: #8aa1b1;
+}
+
+/* navigation style */
+nav {
+  background-color: #8aa1b1;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.4em;
+}
+
+nav li:hover {
+  background-color: #60656f;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+/* main body styles */
+main {
+  background-color: #60656f;
+  font-family: "Oswald", sans-serif;
+}
+
+.desktop {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  padding: 1% 0;
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.4em;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: #000;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.mobile {
+  padding-bottom: 2%;
+}
+
+.mobile h3 {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.mobile h4 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #c49991;
+  font-size: 2em;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0 2%;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.mainGrid {
+  text-align: center;
+  padding: 2% 0;
+}
+
+.radius {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+  margin-bottom: 2%;
+}
+
+.p1 {
+  margin-bottom: 2em;
+}
+
+.radius:hover {
+  border: 1px solid #c5a00b;
+}
+
+/* style rules for form */
+
+.form-grid {
+  width: 75%;
+  margin: 0 auto;
+  color: white;
+}
+
+.form-grid h2 {
+  color: black;
+}
+
+fieldset {
+  border: 1px solid;
+  padding: 2%;
+}
+
+label {
+  display: block;
+  font-size: 1.5em;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 3%;
+  font-size: 1.1em;
+}
+
+legend {
+  font-size: 1.2em;
+  color: black;
+}
+
+.btn {
+  display: block;
+  padding: 0.4em;
+  border-radius: 10px;
+  margin: 2% auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.btnContainer {
+  display: flex;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* style rules for video */
+.video {
+  display: block;
+  max-width: 100%;
+}
+
+.video-p p {
+  margin-bottom: 4%;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid black;
+  background-color: #c49991;
+  font-size: 0.6em;
+}
+
+/* Styles for desk-tab */
+@media screen and (min-width: 1015px) {
+  body {
+    background-color: #8aa1b1;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .desk {
+    display: none;
+    max-width: 100%;
+  }
+
+  .desk img {
+    max-width: 100%;
+  }
+
+  .desk-logo {
+    display: block;
+    height: 150px;
+    width: 200px;
+  }
+
+  header {
+    float: left;
+    width: 25%;
+  }
+
+  /* style for navigation */
+  nav {
+    float: right;
+    width: 70%;
+    padding: 1.5% 0;
+    margin: 1.9em 1em 0 0;
+  }
+
+  nav ul {
+    border-bottom: none;
+  }
+
+  nav li {
+  }
+
+  nav li a {
+    font-size: 1em;
+    padding: 0.5em 2em;
+  }
+
+  /* style rules for main */
+  main {
+    clear: left;
+  }
+
+  h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .mainGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 2%;
+  }
+
+  th {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.8em;
+  }
+
+  td {
+    padding: 0.8em;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    font-family: "Oswald", sans-serif;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #c0c0c0;
+  }
+
+  /* style rules for form */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 20px;
+  }
+
+  .btn {
+    padding: 2% 3%;
+  }
+
+  legend {
+    font-size: 1.8em;
+  }
+
+  /* style rules for video desktop */
+  .video-flex {
+    display: flex;
+    padding-bottom: 4%;
+  }
+
+  .video {
+    max-width: 45%;
+    margin-right: 2%;
+  }
+
+  .video-p {
+    display: block;
+  }
+}
